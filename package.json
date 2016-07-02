@@ -1,0 +1,40 @@
+{
+  "name": "sedona",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Проект «Седона» от HTML Academy.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyvfyv/sedona.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/fyvfyv/sedona/issues"
+  },
+  "homepage": "https://github.com/fyvfyv/sedona#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.13.0",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^2.13.1",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-pug": "^3.0.3",
+    "gulp-sass": "^2.3.2",
+    "pug-lint": "^2.2.2",
+    "run-sequence": "^1.2.1",
+    "sass-lint": "^1.8.2",
+    "stylelint": "^6.7.1",
+    "stylelint-config-standard": "^9.0.0"
+  },
+  "scripts": {
+    "puglint": "pug-lint pug/",
+    "eslint": "eslint .",
+    "sasslint": "sass-lint sass/**/*.scss",
+    "stylelint": "stylelint css/**/*.css",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve",
+    "test": "npm run puglint && npm run eslint && npm run sasslint && npm run stylelint"
+  }
+}

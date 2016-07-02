@@ -1,0 +1,97 @@
+options:
+  merge-default-rules: false
+  formatter: html
+  output-file: 'linters/sass-lint.html'
+
+files:
+  include: 'sass/**/*.s+(a|c)ss'
+  ignore:
+    - 'sass/vendor/**/*.*'
+
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+
+  no-warn: 2
+  no-debug: 1
+  no-ids: 2
+  no-important: 2
+  hex-length:
+    - 2
+    -
+      style: short
+  hex-notation:
+    - 2
+    -
+      style: lowercase
+  indentation:
+    - 2
+    -
+      size: 4
+  property-sort-order:
+    - 2
+    -
+      order:
+        - content
+        - display
+        - float
+        - position
+        - width
+        - height
+        - margin
+        - padding
+        - border
+        - font-family
+        - font-size
+        - font-weight
+        - line-height
+      ignore-custom-properties: true
+  clean-import-paths:
+    - 2
+    -
+      filename-extension: false
+  quotes:
+    - 2
+    -
+      style: single
+  pseudo-element: 2
+  id-name-format:
+    - 2
+    -
+      convention: hyphenatedlowercase
+      allow-leading-underscore: false
+  url-quotes: 2
+  variable-name-format:
+    - 2
+    -
+      convention: hyphenatedbem
+      allow-leading-underscore: false
+  class-name-format:
+    - 2
+    -
+      convention: hyphenatedbem
+      allow-leading-underscore: false
+  placeholder-name-format:
+    - 2
+    -
+      convention: hyphenatedlowercase
+      allow-leading-underscore: false
+  function-name-format:
+    - 2
+    -
+      convention:  ^[_a-z]+$
+      allow-leading-underscore: true
+      convention-explanation: 'Functions must contain only lowercase letters and underscores and begin with _'
+  mixin-name-format:
+    - 2
+    -
+      convention:  ^[_a-z]+$
+      allow-leading-underscore: true
+      convention-explanation: 'Mixins must contain only lowercase letters and underscores and begin with _'

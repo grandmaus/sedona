@@ -1,0 +1,7 @@
+layout/
+node_modules/
+css/
+*.html
+*.log
+*.psd
+*.ai

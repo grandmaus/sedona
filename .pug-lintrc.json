@@ -1,0 +1,21 @@
+{
+    "disallowClassAttributeWithStaticValue": true,
+    "disallowIdAttributeWithStaticValue": true,
+
+    "disallowBlockExpansion": true,
+    "disallowMultipleLineBreaks": true,
+    "disallowSpacesInsideAttributeBrackets": true,
+
+    "requireClassLiteralsBeforeIdLiterals": true,
+    "requireClassLiteralsBeforeAttributes": true,
+    "requireIdLiteralsBeforeAttributes": true,
+
+    "requireLowerCaseAttributes": true,
+    "requireLineFeedAtFileEnd": true,
+    "requireLowerCaseTags": true,
+    "requireSpaceAfterCodeOperator": true,
+    "validateDivTags": true,
+
+    "validateIndentation": 4,
+    "validateLineBreaks": "LF"
+}
